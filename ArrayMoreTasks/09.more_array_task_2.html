@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>More Array Task 2</title>
+</head>
+<body>
+    <h1>Blood Type</h1>
+
+    <p>Write a program that allows the user to enter a blood type. When the user clicks the "Submit" button, the program shows the percentage of the blood type found in the following array:</p>
+    <p>var bloodTypes = ["A+", "O-", "AB+", "O+", "AB+", "AB+", "O-", "AB+", "O+", "AB+"];</p>
+    <p>For example, if the user enters "AB+" as the blood type, the program will print "AB+ 50 percent" as the answer.</p>
+
+    <form>
+        <label>Blood type: </label>
+        <input type="text" id="txtBloodType" />
+        <input type="button" value = "Submit" onclick="printPercentage()" />
+    </form>
+
+    <p id="pOutput"></p>
+
+    <script src="09.more_array_task_2.js"></script>
+</body>
+</html>

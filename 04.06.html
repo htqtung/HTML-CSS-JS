@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script>
+		var earth;
+		function initialize() {
+		  var options = {atmosphere: true, center: [0, 0], zoom: 0};
+		  earth = new WE.map('earth_div', options);
+		  /* old map resource 
+		  WE.tileLayer('http://otile1.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.jpg',{
+				  attribution: 'Tiles Courtesy of MapQuest'
+				}).addTo(earth);
+		  */	
+		  // new map resource	
+		  WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+            attribution: '© OpenStreetMap contributors'
+          }).addTo(earth);		
+				
+		}
+
+		function goHome() {
+		  // Set the map center to the latitude / longitude position of your own home and 
+            earth.setView([10.390579613991173,105.41957918765152]);
+
+		  // Zoom the map close enough
+		  earth.setZoom(18);
+		}
+
+		function showCoords() {
+		  //  Show the current coordinates of the map center in an alert dialog box
+            alert(earth.getCenter());
+		}
+    </script>
+    <style>
+		html, body {
+		  padding: 0;
+		  margin: 0;
+		}
+		#earth_div{
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0; 
+		  background-color: #000000;
+		  position: absolute !important;
+		}
+
+		#buttons {
+			position: absolute !important;
+			top:10px;
+			left: 10px;
+		}
+      </style>
+      <title>Earth</title>
+    </head>
+    <body onload="initialize()">
+      
+      <div id="earth_div"></div>
+      <div id="buttons">
+        <!-- Add two buttons: GO HOME and SHOW COORDINATES -->
+        <button onclick="goHome()">GO HOME</button>
+        <button onclick="showCoords()">SHOW COORDINATES</button>
+      </div>
+  </body>
+        <footer>
+        <p>Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            
+            <a href="http://jslint.com/">
+                <img style="border:0;width:105px;height:31px;text-decoration:none;" 
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/jslint_logo_grayscale_31.png" 
+                    alt="jslint - JS Quality Test Tool" /></a>
+        </p>
+    </footer>
+</html>

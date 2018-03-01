@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>More Array Task 3</title>
+</head>
+<body>
+    <h1>Club members</h1>
+
+    <form>
+         <label>Name:  </label>
+        <input type="text" id="txtName" />
+        <label>Age:</label>
+        <input type="text" id="txtAge" />
+        <input type="button" value="Save" onClick="insertData()" />
+    </form>
+    <br/ >
+    <div id="divCounter">0 members</div>
+    <br/>
+    <input type="button" value="Show Minors" onClick="showMinor()" />
+    <input type="button" value="Show Adults" onClick="showAdult()" />
+    <input type="button" value="Show oldest member(s)" onClick="showOldest()" />
+    <input type="button" value="Show youngest member(s)" onClick="showYoungest()" />
+    
+    <div id="divOutput"></div>
+
+    <script src="09.more_array_task_3.js"></script>
+</body>
+</html>

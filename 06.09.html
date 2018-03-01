@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Infraction fine</title>
+    <link rel="stylesheet" type="text/css" href="06.09.css" />
+</head>
+<body>
+	<h1>Infraction fine </h1>
+
+	<form>
+		<p>
+			<label>Driving Speed: </label>
+            <input type="text" name="txtDrivingSpeed" id="txtDrivingSpeed" size="3" />
+		</p>
+		<p>
+			<label>Speed limit: </label>
+            <input type="text" name="txtSpeedLimit" id="txtSpeedLimit" size="3" />
+		</p>
+		<p>
+			<input type="button" value="Tell about the ticket" onClick="tellInfractionFine()" />
+		</p>
+	</form>
+
+    <!-- This is the target where the JavaScript code will write the answer -->
+	<div id="divAnswer"></div>
+
+    <script src="06.09.js"></script>
+    <footer style="margin-top: 40px;">
+        <p>&copy;Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            <br />
+            Validated by:
+            <br />
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
+
+<!-- test example:
+drivingSpeed = 120, speedLimit = 120 -> No speeding, no fine
+drivingSpeed = 65, speedLimit = 60 -> Infraction fine is 85 euros.
+drivingSpeed = 77, speedLimit = 60 -> Infraction fine is 115 euros.
+drivingSpeed = 105, speedLimit = 100 -> Infraction fine is 70 euros.
+drivingSpeed = 117, speedLimit = 100 -> Infraction fine is 100 euros.
+drivingSpeed = 121, speedLimit = 100 -> Income-based unit fines.
+-->
+
+

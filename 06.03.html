@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Package Comparison</title>
+</head>
+<body>
+	<h1>Package Comparison</h1>
+
+	<form>
+		<p>
+			<label>Text messages: </label>
+            <input type="text" name="txtMessages" id="txtMessages" size="3" /> pcs
+		</p>
+		<p>
+			<label>Call time: </label> 
+            <input type="text" name="txtCallTime" id="txtCallTime" size="3" /> min
+		</p>
+		<p>
+			<input type="button" value="Compare Packages" onClick="comparePackages()" />
+		</p>
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="divAnswer"></div>
+    
+    <script src="06.03.js"></script>
+    <footer style="margin-top: 40px;">
+        <p>&copy;Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            <br />
+            Validated by:
+            <br />
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
+
+<!-- test example: 
+textMessages  = 20 , callTime=30-> costs = 23.35 euros (Special Package) 
+textMessages  = 100 , callTime=150-> costs = 37.15 euros (Special Package)  
+-->

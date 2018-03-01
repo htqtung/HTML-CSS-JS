@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Study Grant</title>
+    <link rel="stylesheet" type="text/css" href="06.07.css" />
+</head>
+<body>
+	<h1>Study Grant</h1>
+
+	<form>
+		<p>
+			<label>Age: </label>
+            <input type="text" name="txtAge" id="txtAge" size="3" />
+		</p>
+		<p>
+			<label>With Parents (y/n): </label>
+            <input type="text" name="txtWithParents" id="txtWithParents" size="1" />
+		</p>
+		<input type="button" value="Show Study Grant" onClick="showStudyGrant()" />
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="divAnswer"></div>
+
+    <script src="06.07.js"></script>
+    <footer style="margin-top: 40px;">
+        <p>&copy;Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            <br />
+            Validated by:
+            <br />
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Body Mass Index (BMI)</title>
+</head>
+<body>
+	<h1>Body Mass Index (BMI)</h1>
+
+	<form>
+		<p>
+			<label>Weight: </label>
+            <input type="text" name="txtWeight" id="txtWeight" size="3" /> kg
+		</p>
+		<p>
+			<label>Height: </label>
+            <input type="text" name="txtHeight" id="txtHeight" size="3" /> cm
+		</p>
+		<p>
+			<input type="button" value="Calculate BMI" onClick="calculateBMI()" />
+		</p>
+	</form>
+
+	<div id="divAnswer"></div>
+
+    <script src="06.05.js"></script>
+    <footer style="margin-top: 40px;">
+        <p>&copy;Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            <br />
+            Validated by:
+            <br />
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"                    alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
+
+<!-- test example:
+weight = 89, height = 180 -> bmi = 24.69 (Normal Weight)
+-->
+
+

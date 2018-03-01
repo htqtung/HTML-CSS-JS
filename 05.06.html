@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Unit fine</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function calculateUnitFine() {
+		  // Read the value from the input field into a variable
+            var txtNetIncome = document.getElementById("txtNetIncome").value;
+            var netIncome = Number(txtNetIncome);
+		// Calculate the unit fine and assign the result into another variable
+            var unitFine = ((netIncome - 255)/60).toFixed(2);
+		// Write the answer to the web page DOM, in the answer div, as the content
+            document.getElementById("answerDiv").innerHTML = ("Unit fine is " + unitFine + " euro");
+	}
+    </script>
+    <h2>Assignment 05.06</h2>
+    <h3>Unit fine</h3>
+    <form>
+        <label>Monthly net income:</label>
+        <input id="txtNetIncome" name="txtNetIncome" size="5" type="text">
+        <input value="Calculate unit fine" onclick="calculateUnitFine()" type="button">
+    </form>
+    <div id="answerDiv"></div>
+    <footer style="margin-top: 40px;">
+        <p>Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            
+            <a href="http://jslint.com/">
+                <img style="border:0;width:105px;height:31px;text-decoration:none;" 
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/jslint_logo_grayscale_31.png" 
+                    alt="jslint - JS Quality Test Tool" /></a>
+        </p>
+    </footer>
+</body>
+</html>

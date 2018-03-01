@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Number generator</title>
+</head>
+<body>
+	<h1>Number generator</h1>
+
+	<form>
+		<p>
+			<label>Number of values: </label> 
+            <input type="text" id="txtNumber" size="5"> 
+            <input type="button" value="Generate" onClick="generateNumber()">
+		</p>
+	</form>
+    
+	<div id="divOutput"></div>
+    
+    <script src="09.extra.01.js"></script>
+</body>
+</html>
+
+<!-- test example:
+name = Maija , action = Add -> Inserted names: Maija   (+ no 'Winner is X'-text)
+... name = Leena, action= Add ,  -> Inserted names: Maija , Leena   (+ no 'Winner is X'-text)
+... name = Minna, action= Add , action = Make the draw > Inserted names: Maija , Leena, Matti, Pekka, Jukka,Paavo, Minna    Winner is Leena (Randomized).				
+-->

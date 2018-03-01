@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Cottage rent per participant</title>
+<style type="text/css">
+label {
+	display: block;
+	width: 6em;
+	float: left;
+}
+</style>
+<script type="text/javascript">
+	
+	function calculateRent() {
+        var txtRent = document.getElementById("rent").value;
+        var rent = Number(txtRent);
+        var txtParticipant = document.getElementById("participants").value;
+        var numPerson = Number(txtParticipant);
+        var rentPerPerson = rent/numPerson;
+        var result = rentPerPerson.toFixed(2);
+        document.getElementById("answerDiv").innerHTML = "Rent per participants is " + result + " euros";
+	}
+		
+</script>
+</head>
+<body>
+    <h2>Assignment 05.09</h2>
+	<h3>Cottage rent per participant</h3>
+
+	<form>
+		<p>
+			<label>Rent: </label> <input type="text" name="rent" id="rent"
+				size="5">
+		</p>
+		<p>
+			<label>Participants </label> <input type="text" name="participants"
+				id="participants" size="3">
+		</p>
+		<p>
+			<input type="button" value="Calculate rent" onClick="calculateRent()">
+		</p>
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="answerDiv"></div>
+    <footer style="margin-top: 40px;">
+        <p>Tung Huynh, 2017<br />
+            <br />
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+            
+            <a href="http://jslint.com/">
+                <img style="border:0;width:105px;height:31px;text-decoration:none;" 
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/jslint_logo_grayscale_31.png" 
+                    alt="jslint - JS Quality Test Tool" /></a>
+        </p>
+    </footer>
+</body>
+</html>
