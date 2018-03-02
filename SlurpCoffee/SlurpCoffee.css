@@ -1,0 +1,9 @@
+﻿body {
+    color: black;
+    padding: 2em;   /* 2 times the current zoom level font size */
+}
+
+footer {
+    margin-top: 64px;   /* Keeps footer a bit separated from main content */
+}
+

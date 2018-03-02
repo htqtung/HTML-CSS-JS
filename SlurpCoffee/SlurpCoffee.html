@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Slurp Coffee</title>
+    <link rel="stylesheet" href="SlurpCoffee.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</head>
+<body>        
+        
+    <div class="container-fluid">
+        <h1>Coffee Box</h1>
+        <form>
+            <div class="form-group">
+                <label for="inputSmallBag">200g bag</label>
+                <input type="number" class="form-control" id="inputSmallBag" data-toggle="tooltip" data-placement="bottom" title="Enter number of 200g bags">
+            </div>
+            <div class="form-group">
+                <label for="inputMediumBag">400g bag</label>
+                <input type="number" class="form-control" id="inputMediumBag" data-toggle="tooltip" data-placement="bottom" title="Enter number of 400g bags">
+            </div>
+            <div class="form-group">
+                <label for="inputLargeBag">1000g bag</label>
+                <input type="number" class="form-control" id="inputLargeBag" data-toggle="tooltip" data-placement="bottom" title="Enter number of 1000g bags">
+            </div>
+            <div class="form-group">
+                <label for="inputBoxSize">Box size (30-100)</label>
+                <input type="number" class="form-control" id="inputBoxSize" data-toggle="tooltip" data-placement="bottom" title="Enter 1 dimension of the cubic box in centimeter">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="run()">Submit</button>
+        </form>
+
+        <!-- This is the target where the JavaScript will write the answer -->
+        </br>
+        <div id="divAnswer"></div>
+        
+        <footer>
+            <p>&copy; Tung Huynh, 2018
+                <br />
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript run after the body items have been added to the DOM -->
+    <script src="SlurpCoffee.js"></script> 
+</body>
+</html>
